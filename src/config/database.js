@@ -1,5 +1,5 @@
 require("dotenv").config({
-  path: process.env.NODE_ENV == "test" ? ".env.test" : ".env",
+  path: process.env.NODE_ENV === "test" ? ".env.test" : ".env",
 });
 
 module.exports = {
@@ -12,8 +12,8 @@ module.exports = {
   operatorsAliases: false,
   logging: false,
   define: {
-    timestamp: true,
-    underscore: true,
-    underscoreAll: true,
+    timestamps: true,
+    underscored: true,
+    underscoredAll: true,
   },
 };
