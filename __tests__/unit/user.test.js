@@ -1,4 +1,4 @@
-const bcrypt = require("bcryptj");
+const bcrypt = require("bcryptjs");
 
 const { User } = require("../../src/app/models");
 const truncate = require("../utils/truncate");
@@ -11,7 +11,7 @@ describe("User", () => {
   it("should encrypt user password", async () => {
     const user = await User.create({
       name: "Weslley",
-      email: "weslley@gmail.com",
+      email: "weslley@gmail.com.br",
       password: "123456",
     });
 
